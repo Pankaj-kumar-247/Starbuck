@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="starbuck.css" />
+  </head>
+  <body>
+    <!-- STARBUCKS NAVIGATION BAR -->
+    <nav
+      class="bg-white fixed w-full h-24 flex justify-between text-black shadow-md"
+    >
+      <div class="left-side flex items-center gap-5">
+        <img class="logo h-16" src="Starbucks-Logo.png" alt="logo" />
+
+        <ul class="flex gap-10">
+          <li>
+            <a class="font-serif font-bold" href="#">MENU</a>
+          </li>
+          <li>
+            <a class="font-serif font-bold" href="#">REWARDS</a>
+          </li>
+          <li>
+            <a class="font-serif font-bold" href="#">GIFT CARDS</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="right-side flex justify-between items-center">
+        <i class="fa-solid fa-location-dot mr-2"></i>
+        <a class="font-mono ml-1 mr-20" href="#">Find a store</a>
+        <button
+          class="bg-white border-2 border-black text-black font-bold px-4 py-1 rounded-full mr-8"
+        >
+          Sign in
+        </button>
+        <button
+          class="bg-black text-white font-bold px-4 py-1 rounded-full mr-14"
+        >
+          Join now
+        </button>
+      </div>
+    </nav>
+
+    <!-- MAIN BODY -->
+
+    <main class="w-500 h-full text-center mt-10">
+      <!-- THE FIRST SIDLE -->
+      <div
+        class="brown flex items-center justify-between text-center w-full h-130 mt-10 ml-20 md-10 mr-20 shadow-50xl"
+      >
+        <!-- LEFT-SIDE -->
+        <div class="content">
+          <h1 class="font-bold first-h">Java Chip Frappuccino</h1>
+          <img class="veg" src="veg-icon.png" alt="" />
+          <p class="first-content">
+            Mocha sauce and Frappuccino® chips blended with with Frappuccino®
+            roast coffee and milk and ice, then topped with whipped vanilla
+            topping and mocha drizzle to bring you endless java joy
+          </p>
+          <div class="ml-20 w-100">
+            <img
+              class="icon inline-block align-middle"
+              src="soy_icon.png"
+              alt=""
+            />
+            <p class="img_p">SOY</p>
+            <img class="icon inline-block" src="milk icon.png" alt="" />
+            <p class="img_p">MILK</p>
+            <img class="icon" src="wheat_icon.png" alt="" />
+            <p class="img_p">WHEAT</p>
+          </div>
+          <button class="btn">₹ 441.00</button>
+        </div>
+
+        <!-- RIGTH-SIDE -->
+        <div class="coffee">
+          <img class="w-100 h-150" src="Java Chip Frappuccino.png" alt="" />
+        </div>
+      </div>
+
+      <!-- SECOND SILDE -->
+      <div
+        class="flex items-center text-center container w-full h-130 mt-20 ml-20 md-20 mr-20 shadow-50xl bg-image"
+      >
+        <!-- STARBUCK MENU SPECIL ITEM -->
+        <div id="carousel" class="pankaj-container">
+          <!-- Images added by JavaScript -->
+        </div>
+      </div>
+
+      <!-- THIRD SLIDE -->
+      <div
+        class="second-slide flex justify-between items-center bg-green-700 w-full h-150 mt-20 ml-20 md-20 mr-20 shadow-50xl"
+      >
+        <div id="display-image rounded-2xl" class="bg-white left-image">
+          <!-- LEFT SIDE DON'T NOTICE IT NOW -->
+
+          <img
+            class="w-full h-50 rounded-2xl"
+            id="mainImage"
+            src=""
+            alt="food"
+          />
+          <p
+            class="hidden bg-white font-bold mr-5 ml-5 mt-10"
+            id="mainCaption"
+          ></p>
+          <p
+            class="hidden bg-white from-stone-400 text mr-5 ml-5"
+            id="mainInfo"
+          ></p>
+          <p id="about" class="textAbout"></p>
+          <p class="mainPrice" id="mainPrice"></p>
+        </div>
+
+        <!-- RIGHT-SIDE IMAGES -->
+        <div id="rightImages" class="rightImages">
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Crispy Chicken Focaccia Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Crispy Chicken Focaccia Sandwich
+            </figcaption>
+            <figcaption class="hidden">Per Serve (215 g) - 886 kcal</figcaption>
+            <figcaption class="hidden">
+              Our crispy fried chicken sandwich comes with a Bhoot Jolokia
+              spread and cheese, sandwiched in a focaccia bread. A medly of
+              flavours to spice up your day
+            </figcaption>
+            <figcaption class="hidden">₹ 414.75</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Chicken Tikka Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Chicken Tikka Sandwich</figcaption>
+            <figcaption class="hidden">Per Serve (185 g) - 618 kcal</figcaption>
+            <figcaption class="hiddden">
+              Tandoori marinated and roasted chicken in a spiced and creamy
+              tomato-based gravy on a bed of chopped spinach, sandwiched in a
+              brown bread
+            </figcaption>
+            <figcaption class="hidden">₹ 336.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Harissa Chicken sourdough sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Harissa Chicken sourdough sandwich
+            </figcaption>
+            <figcaption class="hidden">
+              Per Serve (160 g ) - 555 kcal
+            </figcaption>
+            <figcaption class="hidden">
+              Bold flavors of harissa grilled chicken, paired perfectly with the
+              crunch of grilled sourdough
+            </figcaption>
+            <figcaption class="hidden">₹ 462.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Avocado Salsa Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Avocado Salsa Sandwich</figcaption>
+            <figcaption class="hidden">Per Serve (170 g) - 337 kcal</figcaption>
+            <figcaption class="hidden">
+              A flavourful Avocado Sandwich with creamy guacamole, refreshing
+              salsa, and crunchy sunflower seed bread.
+            </figcaption>
+            <figcaption class="hidden">₹ 462.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Basil Tomata Mozzarella Cheese Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Basil Tomata Mozzarella Cheese Sandwich
+            </figcaption>
+            <figcaption class="hidden">Per Serve (170 g) - 484 kcal</figcaption>
+            <figcaption class="hidden">
+              Tomato and mozzarella slices on a layer of basil sauce sandwiched
+              in a multigrain bread
+            </figcaption>
+            <figcaption class="hidden">₹ 399.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Chicken Salad Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Chicken Salad Sandwich</figcaption>
+            <figcaption class="hidden">Per Serve (185 g ) - 574 kca</figcaption>
+            <figcaption class="hidden">
+              Tender chicken mixed with julienned colored bell peppers, green
+              leafy lettuce, and a creamy mustard mayonnaise mixture
+            </figcaption>
+            <figcaption class="hidden">₹ 294.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/chilli cheese toast.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">chilli cheese toast</figcaption>
+            <figcaption class="hidden">Per Serve (140 g) - 471 kcal</figcaption>
+            <figcaption class="hidden">
+              Cheesy and fiery snack on a toasted French-style baguette, topped
+              with red, yellow and green pepper and chopped green chilli.
+            </figcaption>
+            <figcaption class="hidden">₹ 372.75</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Kosha mangsho wrap.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Kosha mangsho wrap</figcaption>
+            <figcaption class="hidden">Per Serve (210 g) - 662 kcal</figcaption>
+            <figcaption class="hidden">
+              A traditional mutton preparation packed in a parantha
+            </figcaption>
+            <figcaption class="hidden">₹ 367.50</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Mediterranean_Focaccia_Sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Mediterranean Focaccia Sandwich
+            </figcaption>
+            <figcaption class="hidden">Per Serve (245 g) - 573 kcal</figcaption>
+            <figcaption class="hidden">
+              Crispy fried aubergine on a bed of roasted tomatoes v & bell
+              pepper paste, labneh and pesto, sandwiched in a Focaccia Bread
+            </figcaption>
+            <figcaption class="hidden">₹ 393.75</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Murgh kathi wrap.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Murgh kathi wrap</figcaption>
+            <figcaption class="hidden">Per Serve (220 g) - 546 Kcal</figcaption>
+            <figcaption class="hidden">
+              Spicy melange of chicken, onion, peppers and cheddar cheese packed
+              in a tortilla wrap. Served with a makhani dip.
+            </figcaption>
+            <figcaption class="hidden">₹ 383.25</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Mushroom pesto Sourdough sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Mushroom pesto Sourdough sandwich
+            </figcaption>
+            <figcaption class="hidden">Per Serve (192 g) - 637 kcal</figcaption>
+            <figcaption class="hidden">
+              Creamy Stracciatella cheese and an earthy mushroom, onion, garlic
+              filling on a bed of green leafy lettuce and a basil pesto spread.
+              Served on a toasted sourdough slice.
+            </figcaption>
+            <figcaption class="hidden">₹ 472.50</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Paneer tikka snadwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Paneer tikka snadwich</figcaption>
+            <figcaption class="hidden">
+              Per Serve (185 g ) - 537 kcal
+            </figcaption>
+            <figcaption class="hidden">
+              Marinated tandoori paneer filling, sliced cheese, and whole
+              spinach leaves, all packed into a flavorful sandwich
+            </figcaption>
+            <figcaption class="hidden">₹ 294.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Scrambled egg & chilly Oil on Grilled Sourdough.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Scrambled egg & chilly Oil on Grilled Sourdough
+            </figcaption>
+            <figcaption class="hidden">Per Serve (140 g) - 295 kcal</figcaption>
+            <figcaption class="hidden">
+              Scrambled eggs topped with fiery bhoot jholakya chili sauce on a
+              toasted sourdough
+            </figcaption>
+            <figcaption class="hidden">₹ 325.50</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Smoked Chicken & Salami Sandwhich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Smoked Chicken & Salami Sandwhich
+            </figcaption>
+            <figcaption class="hidden">Per Serve (150 g) - 399 kcal</figcaption>
+            <figcaption class="hidden">
+              A hearty Smoked Chicken & Salami Sandwich with tender smoked
+              chicken, chicken salami and egg white, all nestled between two
+              slices of poppy seed bread.
+            </figcaption>
+            <figcaption class="hidden">₹ 399.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Spinach& corn sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">Spinach & corn sandwich</figcaption>
+            <figcaption class="hidden">
+              Per Serve (200 g ) - 541 kcal
+            </figcaption>
+            <figcaption class="hidden">
+              A savory blend of spinach and corn, garlic & herb aioli, melted
+              mozzarella cheese, all tucked between slices of bread
+            </figcaption>
+            <figcaption class="hidden">₹ 273.00</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              class="food-image"
+              src="starbuckFood/Tandoori Paneer Sourdough sandwich.webp"
+              alt="food"
+            />
+            <figcaption class="hidden">
+              Tandoori Paneer Sourdough sandwich
+            </figcaption>
+            <figcaption class="hidden">
+              Per Serve (180 g ) - 446 kcal
+            </figcaption>
+            <figcaption class="hidden">
+              A fusion of tandoori paneer in a deliciously grilled sourdough
+              sandwich
+            </figcaption>
+            <figcaption class="hidden">₹ 446.25</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="flex justify-center w-100 mt-20 mr-10 ml-20">
+        <img
+          class="h-36 cursor-pointer mt-30"
+          src="Starbucks-Logo.png"
+          alt=""
+        />
+
+        <!-- ABOUT US -->
+        <p class="ml-20 mt-20 font-bold">About Us</p>
+        <br />
+        <ul class="cursor-pointer mt-30">
+          <li class="mt-5">Our Heritage</li>
+          <li class="mt-5">Coffeehouse</li>
+          <li class="mt-5">Our Company</li>
+        </ul>
+
+        <!-- RESPONSIBILITY -->
+        <p class="ml-20 mt-20 font-bold">Responsibility</p>
+        <br />
+        <ul class="mt-30 cursor-pointer">
+          <li class="mt-5">Diversity</li>
+          <li class="mt-5">Community</li>
+          <li class="mt-5">Ethical Sourcing</li>
+          <li class="mt-5">Environmental Stewardship</li>
+          <li class="mt-5">Learn More</li>
+        </ul>
+
+        <!-- OUICK LINKS -->
+        <p class="ml-20 mt-20 font-bold">Quick Links</p>
+        <ul class="mt-30 cursor-pointer">
+          <li class="mt-5">Privacy Policy</li>
+          <li class="mt-5">FAQs</li>
+          <li class="mt-5">Customer Service</li>
+          <li class="mt-5">Delivery</li>
+          <li class="mt-5">Loyalty Program Terms and Conditions</li>
+          <li class="mt-5">Starbucks India Mobile App Terms of Use</li>
+          <li class="mt-5">Special Discount 25% Off Offer</li>
+          <li class="mt-5">Get 2x Bonus Stars</li>
+          <li class="mt-5">Starbucks® Rewards Program</li>
+          <li class="mt-5">Beverage Subscription</li>
+          <li class="mt-5">Monsoon Members Gift</li>
+          <li class="mt-5">Monsoon Menu LTO 10% Offer</li>
+        </ul>
+
+        <!-- LEGAL -->
+        <p class="ml-20 mt-20 font-bold">Legal</p>
+        <ul class="mt-30 cursor-pointer">
+          <li class="mt-5">Disclaimer</li>
+        </ul>
+
+        <!-- MY LOGO -->
+        <img class="h-16" src="2.png" alt="" />
+      </div>
+    </footer>
+    <script src="starbuck.js"></script>
+  </body>
+</html>
