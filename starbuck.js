@@ -1,14 +1,14 @@
 const images = [
-  "Belgium Chocolate Latte.png",
-  "Black_Palm_Jaggery_Latte.png",
-  "Caramel_Macchiato.png",
-  "Chocolate_Cappuccino.png",
-  "Doppio_Espresso.png",
-  "Hazelnut_Oat_Cortado.png",
-  "Iced_Belgium_Chocolate_Latte.png",
-  "Ices_Caffe_latte.png",
-  "Pecan_Iced_Shaken_Espresso.png",
-  "Picco_Cappuccino.png",
+  "starbucks_drink/Belgium Chocolate Latte.png",
+  "starbucks_drink/Black_Palm_Jaggery_Latte.png",
+  "starbucks_drink/Caramel_Macchiato.png",
+  "starbucks_drink/Chocolate_Cappuccino.png",
+  "starbucks_drink/Doppio_Espresso.png",
+  "starbucks_drink/Hazelnut_Oat_Cortado.png",
+  "starbucks_drink/Iced_Belgium_Chocolate_Latte.png",
+  "starbucks_drink/Ices_Caffe_latte.png",
+  "starbucks_drink/Pecan_Iced_Shaken_Espresso.png",
+  "starbucks_drink/Picco_Cappuccino.png",
 ];
 
 let currentIndex = 4;
@@ -46,35 +46,6 @@ function renderImages() {
 }
 
 renderImages();
-
-// SECOND SLIDE
-// const foodImages = [
-//   'starbuckFood/Avocado Salsa Sandwich.webp',
-//   'starbuckFood/Basil Tomata Mozzarella Cheese Sandwich.webp',
-//   'starbuckFood/Chicken Salad Sandwich.webp',
-//   'starbuckFood/chilli cheese toast.webp',
-//   'starbuckFood/Kosha mangsho wrap.webp',
-//   'starbuckFood/Mediterranean_Focaccia_Sandwich.webp',
-//   'starbuckFood/Murgh kathi wrap.webp',
-//   'starbuckFood/Mushroom pesto Sourdough sandwich.webp',
-//   'starbuckFood/Paneer tikka snadwich.webp',
-//   'starbuckFood/Scrambled egg & chilly Oil on Grilled Sourdough.webp',
-//   'starbuckFood/Smoked Chicken & Salami Sandwhich.webp',
-//   'starbuckFood/Spinach& corn sandwich.webp',
-//   'starbuckFood/Crispy Chicken Focaccia Sandwich.webp',
-//   'starbuckFood/Chicken Tikka Sandwich.webp',
-//   'starbuckFood/Harissa Chicken sourdough sandwich.webp',
-//   'starbuckFood/Tandoori Paneer Sourdough sandwich.webp'
-// ]
-
-// const container = document.getElementById('right-images');
-
-// foodImages.forEach(path => {
-//   const img = document.createElement('img');
-//   img.src = path; // <-- loading local image
-//   img.className = 'food-image';
-//   container.appendChild(img);
-// });
 
 // Get all right-side images
 const figures = document.querySelectorAll(".rightImages figure");
